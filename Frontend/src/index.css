@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #070d18;
+  --bg-elevated: #0f172a;
+  --bg-card: #121c30;
+  --bg-card-soft: #17243d;
+  --bg-accent: #0d233f;
+  --border: #253654;
+  --border-strong: #3a527b;
+
+  --text-main: #e7eefb;
+  --text-muted: #9eb1d4;
+  --text-soft: #7990bc;
+
+  --brand: #4cc2ff;
+  --brand-strong: #1f8ce0;
+  --success: #31d0aa;
+  --warning: #f5b94a;
+  --danger: #f1696d;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --shadow-soft: 0 12px 28px rgba(3, 8, 18, 0.35);
+  --shadow-card: 0 20px 40px rgba(2, 8, 23, 0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', 'Space Grotesk', 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(1200px 700px at 0% -10%, #10335d 0%, rgba(16, 51, 93, 0) 55%),
+    radial-gradient(900px 600px at 100% 0%, #1a2948 0%, rgba(26, 41, 72, 0) 55%),
+    var(--bg);
+  color: var(--text-main);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1526;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #355384, #24395e);
+  border-radius: 999px;
+  border: 2px solid #0d1526;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4a6ea7, #2f4c7e);
+}
